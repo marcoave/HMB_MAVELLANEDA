@@ -20,6 +20,7 @@ public class HomebankingApplication {
 		return args -> {
 			Client client = new Client ("Juan","Gomez","jg@gmail.com");
 			System.out.println(client);
+
 			clientRepository.save(client);
 			System.out.println(client);
 		};
